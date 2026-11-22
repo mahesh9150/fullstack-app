@@ -1,0 +1,147 @@
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  background: #fffaf5;
+}
+
+.order-form-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.section-tag {
+  display: inline-block;
+  color: #f97316;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.order-form-card h2 {
+  font-size: 30px;
+  color: #222;
+  margin: 0 0 25px;
+}
+
+.selected-food {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  background: #fff7ed;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.selected-emoji {
+  font-size: 45px;
+}
+
+.selected-food h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #222;
+}
+
+.selected-food p {
+  margin: 0;
+  color: #f97316;
+  font-weight: 600;
+}
+
+.order-form-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-form-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.order-form-card input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+}
+
+.total {
+  padding: 17px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background: #fff7ed;
+  color: #f97316;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.order-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn {
+  background: #f97316;
+  color: white;
+}
+
+.order-btn:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 500px) {
+  .form-section {
+    padding: 40px 15px;
+  }
+
+  .order-form-card {
+    padding: 25px 20px;
+  }
+
+  .order-form-card h2 {
+    font-size: 24px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
